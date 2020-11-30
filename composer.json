@@ -1,4 +1,7 @@
 {
+    "name": "shareforcelegal/neo4jphp",
+    "description": "A Neo4j client that makes it possible to work with Neo4j.",
+    "license": "MIT",
     "require": {
         "php": "^7.4",
         "psr/http-client": "^1.0",
