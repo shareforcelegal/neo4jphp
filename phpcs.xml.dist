@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset name="shareforce/neo4jphp">
+    <description>The coding standards of this library.</description>
+
+    <arg value="p"/>
+    <arg name="basepath" value="."/>
+    <arg name="extensions" value="php"/>
+    <arg name="parallel" value="80"/>
+    <arg name="cache" value=".phpcs-cache"/>
+    <arg name="colors"/>
+
+    <file>src/</file>
+    <file>tests/</file>
+
+    <rule ref="Shareforce"/>
+</ruleset>

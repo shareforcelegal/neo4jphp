@@ -1,0 +1,31 @@
+{
+    "require": {
+        "php": "^7.4",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "webmozart/assert": "^1.9"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "*",
+        "phpstan/extension-installer": "^1.0",
+        "phpstan/phpstan": "^0.12.54",
+        "phpstan/phpstan-deprecation-rules": "^0.12.5",
+        "phpstan/phpstan-phpunit": "^0.12.16",
+        "phpstan/phpstan-strict-rules": "^0.12.5",
+        "phpunit/phpunit": "^9.4",
+        "shareforcelegal/coding-standards": "dev-master"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Shareforce\\Neo4j\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shareforce\\Neo4j\\": "tests/"
+        }
+    }
+}
