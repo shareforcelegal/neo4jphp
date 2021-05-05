@@ -6,6 +6,7 @@
         "php": ">=7.4",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0",
+        "shareforcelegal/coding-standards": "dev-master",
         "webmozart/assert": "^1.9"
     },
     "require-dev": {
@@ -15,8 +16,7 @@
         "phpstan/phpstan-deprecation-rules": "^0.12.5",
         "phpstan/phpstan-phpunit": "^0.12.16",
         "phpstan/phpstan-strict-rules": "^0.12.5",
-        "phpunit/phpunit": "^9.4",
-        "shareforcelegal/coding-standards": "dev-master"
+        "phpunit/phpunit": "^9.4"
     },
     "config": {
         "sort-packages": true
