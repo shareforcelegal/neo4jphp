@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="shareforce/neo4jphp">
+<ruleset name="shareforcelegal/neo4jphp">
     <description>The coding standards of this library.</description>
 
     <arg value="p"/>
