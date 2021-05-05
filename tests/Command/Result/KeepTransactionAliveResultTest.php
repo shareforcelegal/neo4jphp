@@ -19,13 +19,13 @@ final class KeepTransactionAliveResultTest extends TestCase
     public function testCommitUrlIsPopulated(): void
     {
         // Arrange
-        $data = ['commit' => 'commit-url'];
+        $data = ['commit' => '/some/url/with/transaction-id/commit'];
 
         // Act
         $result = KeepTransactionAliveResult::fromResponse($data);
 
         // Assert
-        static::assertEquals('commit-url', $result->getCommitUrl());
+        static::assertEquals('/some/url/with/transaction-id/commit', $result->getCommitUrl());
     }
 
     /**
