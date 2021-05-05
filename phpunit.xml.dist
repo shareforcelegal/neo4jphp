@@ -1,20 +1,19 @@
-<?xml version="1.0" ?>
-<phpunit bootstrap="vendor/autoload.php" backupGlobals="false" colors="true">
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="vendor/autoload.php" backupGlobals="false"
+         colors="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+    <coverage>
+        <include>
+            <directory>src</directory>
+        </include>
+        <report>
+            <clover outputFile="build/coverage.xml"/>
+            <html outputDirectory="build/coverage-html"/>
+        </report>
+    </coverage>
+
     <testsuites>
         <testsuite name="shareforcelegal/neo4jphp">
             <directory>tests/</directory>
         </testsuite>
     </testsuites>
-
-    <filter>
-        <whitelist>
-            <directory>src</directory>
-        </whitelist>
-    </filter>
-
-    <logging>
-        <log type="coverage-html" target="build/coverage-html"/>
-        <log type="coverage-clover" target="build/coverage.xml"/>
-        <log type="junit" target="build/test-suites.xml"/>
-    </logging>
 </phpunit>
